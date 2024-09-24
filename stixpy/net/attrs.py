@@ -39,13 +39,3 @@ class DataProduct(SimpleAttr):
     #     if str(value).casefold not in [t.casefold for t in DATA_PRODUCTS]:
     #         raise ValueError(f'Data product must be one of {DATA_PRODUCTS} not {value}')
     #     super().__init__(value)
-
-
-class StixDataSource(SimpleAttr):
-    """
-    The source from which the data comes from. default to pub099 server but can be set to any local path instead
-
-    Parameters
-    ----------
-    value : `str`
-    """
